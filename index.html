@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recetas Médicas Electronica</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body>
+    
+        <h1>Recetario - Hospital Provincial de Rosario</h1>
+        <h3>Alefran todos los derechos reservados</h3>
+    
+    
+    <form id="formReceta" onsubmit="agregarReceta(event)">
+        <label for="nombrePaciente">Nombre del paciente:</label>
+        <input type="text" id="nombrePaciente" oninput="capitalizarNombre()" placeholder="Nombre del paciente">
+
+        <label for="medicamento">Medicamento:</label>
+        <select id="medicamento">
+            <option value="">Seleccione un medicamento</option>
+            <option value="ibuprofeno">Ibuprofeno</option>
+            <option value="amoxicilina">Amoxicilina</option>
+            <option value="paracetamol">Paracetamol</option>
+            <option value="prohibido">Clopidogrel</option>
+        </select>
+
+        <label for="dosificacion">Dosificación:</label>
+        <input type="text" id="dosificacion" placeholder="Dosificación">
+
+        <button type="submit">Agregar Medicamento</button>
+    </form>
+    
+    <table id="tablaRecetas">
+        <thead>
+            <tr>
+                <th style="color: blue;">Nombre del Paciente</th>
+                <th style="color: blue;">Medicamento</th>
+                <th style="color: blue;">Dosificación</th>
+                <th style="color: blue;">Acciones</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+
+    <button id="imprimir"><b>Imprimir</b></button>
+    <button onclick="window.open('https://www.santafe.gob.ar/farmamed/login.php', '_blank')" class="btn-link"><b>Farmamed</b></button>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,54 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    background-image: url(Santa\ fe\ Farma.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    margin-bottom: 515px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+h1, h3 {
+    font-size: 24px;
+    text-align: center;
+}
+
+form, table {
+    margin: 20px 0;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+}
+
+button, input, select {
+    padding: 10px;
+    margin: 5px;
+    border-radius: 15px;
+}
+
+#imprimir{
+    background-color: lightgreen;
+    cursor: pointer;
+}
+
+.btn-link {
+    background-color: orange;
+    color: black;
+    padding: 10px 15px;
+    border-radius: 15px;
+    cursor: pointer;
+}
